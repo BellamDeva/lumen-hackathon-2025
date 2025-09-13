@@ -8,7 +8,7 @@ import {
 } from "lucide-react";
 
 export const Sidebar = ({ activeTab, setActiveTab }) => (
-  <div className="w-64 bg-white h-screen border-r border-gray-200 fixed left-0 top-0 z-10">
+  <div className="w-64 bg-white h-screen border-r border-gray-200 fixed left-0 top-0 z-10 mt-14">
     {/* Admin Profile */}
     <div className="p-6 border-b border-gray-200">
       <div className="flex items-center space-x-3">
