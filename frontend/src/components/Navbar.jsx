@@ -1,13 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // This component will display the navigation bar for the application.
 const Navbar = () => {
   return (
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li>
+    <nav className="bg-gray-800 p-4">
+      <ul className="flex space-x-4">
+        <li><Link to="/login" className="text-white hover:text-gray-300">Login</Link></li>
+        <li><Link to="/register" className="text-white hover:text-gray-300">Register</Link></li>
+        <li><Link to="/plans" className="text-white hover:text-gray-300">Plans</Link></li>
+        <li><Link to="/my-subscriptions" className="text-white hover:text-gray-300">My Subscriptions</Link></li>
       </ul>
     </nav>
   );
